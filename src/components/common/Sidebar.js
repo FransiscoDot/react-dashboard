@@ -30,10 +30,12 @@ class Sidebar extends React.Component {
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1">
               <Icon type="pie-chart" />
-              <Link to="/dashboard/balance">Balance</Link>
+              <span>Balance</span>
+              <Link to="/dashboard/balance" />
             </Menu.Item>
             <Menu.Item key="2">
               <Icon type="desktop" />
+              <span>Buy</span>
               <Link to="/dashboard/buy">Buy</Link>
             </Menu.Item>
             <SubMenu
