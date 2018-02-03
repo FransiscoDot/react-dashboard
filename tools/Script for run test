@@ -1,0 +1,3 @@
+ \"npm run test:watch\"
+
+ Add this on start script for run the jest
