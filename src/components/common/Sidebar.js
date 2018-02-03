@@ -36,7 +36,7 @@ class Sidebar extends React.Component {
             <Menu.Item key="2">
               <Icon type="desktop" />
               <span>Buy</span>
-              <Link to="/dashboard/buy">Buy</Link>
+              <Link to="/dashboard/buy" />
             </Menu.Item>
             <SubMenu
               key="sub1"
