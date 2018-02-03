@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout, Breadcrumb } from 'antd';
 const { Content, Footer } = Layout;
 import Sidebar from "../common/Sidebar";
+import HeaderGlobal from "../common/HeaderGlobal";
 
 class Dashboard extends React.Component {
   render() {
@@ -9,11 +10,8 @@ class Dashboard extends React.Component {
       <Layout style={{ minHeight: '100vh' }}>
         <Sidebar />
         <Layout>
-            <Content style={{ margin: '0 16px' }}>
-              <Breadcrumb style={{ margin: '16px 0' }}>
-                <Breadcrumb.Item>User</Breadcrumb.Item>
-                <Breadcrumb.Item>Bill</Breadcrumb.Item>
-              </Breadcrumb>
+            <HeaderGlobal />
+            <Content style={{ margin: '10px 16px' }}>
               <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
                 Dashboard
               </div>
