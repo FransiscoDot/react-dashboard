@@ -5,7 +5,7 @@ import Dashboard from "./dashboard/Dashboard";
 const Root = () => {
   return(
     <Switch>
-      <Route exact path="/" component={Dashboard} />
+      <Route path="/dashboard" component={Dashboard} />
     </Switch>
   );
 };

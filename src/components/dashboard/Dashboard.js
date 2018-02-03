@@ -1,8 +1,22 @@
 import React from 'react';
-import { Layout, Breadcrumb } from 'antd';
+import PropTypes from "prop-types";
+import { Layout } from 'antd';
 const { Content, Footer } = Layout;
+import { Route } from "react-router-dom";
 import Sidebar from "../common/Sidebar";
 import HeaderGlobal from "../common/HeaderGlobal";
+
+const Balance = ({match}) => console.log("match", match) || (
+  <div>
+    <h3>Balance</h3>
+  </div>
+);
+
+const Buy = ({match}) => console.log("match", match) || (
+  <div>
+    <h3>Buy</h3>
+  </div>
+);
 
 class Dashboard extends React.Component {
   render() {
@@ -13,7 +27,8 @@ class Dashboard extends React.Component {
             <HeaderGlobal />
             <Content style={{ margin: '10px 16px' }}>
               <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
-                Dashboard
+                <Route exact path={`${this.props.match.url}/balance`} component={Balance} />
+                <Route exact path={`${this.props.match.url}/buy`} component={Buy} />
               </div>
             </Content>
             <Footer style={{ textAlign: 'center' }}>
@@ -23,6 +38,10 @@ class Dashboard extends React.Component {
       </Layout>
     );
   }
+}
+
+Dashboard.propTypes = {
+  match: PropTypes.object.isRequired
 }
 
 export default Dashboard;

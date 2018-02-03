@@ -1,7 +1,8 @@
 import React from 'react';
-import { Layout, Menu, Icon } from 'antd';
-const { Sider } = Layout;
+import {Layout, Menu, Icon} from 'antd';
+const {Sider} = Layout;
 const SubMenu = Menu.SubMenu;
+import {Link} from 'react-router-dom';
 
 class Sidebar extends React.Component {
   constructor(props) {
@@ -29,11 +30,11 @@ class Sidebar extends React.Component {
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1">
               <Icon type="pie-chart" />
-              <span>Option 1</span>
+              <span><Link to="/dashboard/balance">Balance</Link></span>
             </Menu.Item>
             <Menu.Item key="2">
               <Icon type="desktop" />
-              <span>Option 2</span>
+              <span><Link to="/dashboard/buy">Buy</Link></span>
             </Menu.Item>
             <SubMenu
               key="sub1"
