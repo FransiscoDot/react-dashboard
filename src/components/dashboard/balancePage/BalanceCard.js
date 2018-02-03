@@ -31,7 +31,7 @@ class BalanceCard extends React.Component {
 
   render() {
     return (
-      <ChartCard title="Balance">
+      <ChartCard title="Balance" style={{margin: "8px 0"}}>
         <Tabs defaultActiveKey="1" onChange={this.callback} tabBarExtraContent={datePicker}>
           <TabPane tab="Btn" key="1"><BalanceChart /></TabPane>
           <TabPane tab="Eth" key="2"><BalanceChart /></TabPane>

@@ -20,6 +20,7 @@ const ProfitCard = ({title, total, totalLast, profitPercentage, icon}) =>{
             alt="indicator"
           />
         }
+        style={{margin: "8px 0"}}
       >
         <span>
           Profit this month
