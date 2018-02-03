@@ -5,18 +5,7 @@ const { Content, Footer } = Layout;
 import { Route } from "react-router-dom";
 import Sidebar from "../common/Sidebar";
 import HeaderGlobal from "../common/HeaderGlobal";
-
-const Balance = ({match}) => console.log("match", match) || (
-  <div>
-    <h3>Balance</h3>
-  </div>
-);
-
-const Buy = ({match}) => console.log("match", match) || (
-  <div>
-    <h3>Buy</h3>
-  </div>
-);
+import BalancePage from "./balancePage/BalancePage";
 
 class Dashboard extends React.Component {
   render() {
@@ -27,8 +16,7 @@ class Dashboard extends React.Component {
             <HeaderGlobal />
             <Content style={{ margin: '10px 16px' }}>
               <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
-                <Route exact path={`${this.props.match.url}/balance`} component={Balance} />
-                <Route exact path={`${this.props.match.url}/buy`} component={Buy} />
+                <Route exact path={`${this.props.match.url}/balance`} component={BalancePage} />
               </div>
             </Content>
             <Footer style={{ textAlign: 'center' }}>
@@ -42,6 +30,6 @@ class Dashboard extends React.Component {
 
 Dashboard.propTypes = {
   match: PropTypes.object.isRequired
-}
+};
 
 export default Dashboard;
