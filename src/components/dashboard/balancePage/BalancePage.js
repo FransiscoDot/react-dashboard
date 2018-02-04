@@ -2,7 +2,7 @@ import React from 'react';
 import {Row, Col} from "antd";
 import BalanceCard from "./BalanceCard";
 import ProfitCard from "./ProfitCard";
-import * as constant from "./styles/responsiveCostants";
+import {responsiveProfitCardConstant as responsiveProfitCard} from "./styles/responsiveCostants";
 
 const BalancePage = () => (
   <div>
@@ -12,7 +12,7 @@ const BalancePage = () => (
           </Col>
     </Row>
     <Row gutter={16}>
-      <Col xs={constant.xsProfit} sm={constant.smProfit} md={constant.mdProfit} lg={constant.lgProfit} xl={constant.xlProfit}>
+      <Col {...responsiveProfitCard}>
         <ProfitCard
           title="Bitcoin"
           total={12777}
@@ -20,7 +20,7 @@ const BalancePage = () => (
           profitPercentage={12}
           icon="https://png.icons8.com/ios-glyphs/96/00101f/bitcoin.png"/>
       </Col>
-      <Col xs={constant.xsProfit} sm={constant.smProfit} md={constant.mdProfit} lg={constant.lgProfit} xl={constant.xlProfit}>
+      <Col {...responsiveProfitCard}>
         <ProfitCard
           title="Ethereum"
           total={4590}
@@ -28,7 +28,7 @@ const BalancePage = () => (
           profitPercentage={50}
           icon="https://png.icons8.com/windows/96/00101f/ethereum.png"/>
       </Col>
-      <Col xs={constant.xsProfit} sm={constant.smProfit} md={constant.mdProfit} lg={constant.lgProfit} xl={constant.xlProfit}>
+      <Col {...responsiveProfitCard}>
         <ProfitCard
           title="Dollar"
           total={7430}

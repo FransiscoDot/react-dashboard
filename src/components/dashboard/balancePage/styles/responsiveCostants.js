@@ -1,5 +1,7 @@
-export const xsProfit = 24;
-export const smProfit = 24;
-export const mdProfit = 12;
-export const lgProfit = 8;
-export const xlProfit = 8;
+export const responsiveProfitCardConstant = {
+  xs: 24,
+  sm: 24,
+  md: 12,
+  lg: 8,
+  xl: 8
+};
