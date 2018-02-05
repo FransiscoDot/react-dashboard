@@ -16,17 +16,17 @@ const menuItemStyle = {
 const menu = (
   <Menu>
     <Menu.Item style={menuItemStyle}>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/"><Icon type="user" style={iconStyle} />  Profile</a>
+      <a target="_blank" rel="noopener noreferrer" href=""><Icon type="user" style={iconStyle} />  Profile</a>
     </Menu.Item>
     <Menu.Item style={menuItemStyle}>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/"><Icon type="question-circle-o" style={iconStyle} /> Support</a>
+      <a target="_blank" rel="noopener noreferrer" href=""><Icon type="question-circle-o" style={iconStyle} /> Support</a>
     </Menu.Item>
     <Menu.Item style={menuItemStyle}>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/"><Icon type="book" style={iconStyle} />FAQ</a>
+      <a target="_blank" rel="noopener noreferrer" href=""><Icon type="book" style={iconStyle} />FAQ</a>
     </Menu.Item>
     <hr style={{margin: 0}}/>
     <Menu.Item style={menuItemStyle}>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/"><Icon type="anticon anticon-logout" style={iconStyle} /> Logout</a>
+      <a target="_blank" rel="noopener noreferrer" href=""><Icon type="anticon anticon-logout" style={iconStyle} /> Logout</a>
     </Menu.Item>
   </Menu>
 );
@@ -37,7 +37,7 @@ class HeaderGlobal extends React.Component {
       <Header style={{ background: '#fff', padding: 0, height: "min-content" }}>
         <div style={{float: "right", marginRight: 20}}>
           <AvatarList size="large" style={{height: 0}}>
-            <AvatarList.Item src="https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png" />
+            <AvatarList.Item src="https://gw.alipayobjects.com/zos/rmsportal/gaOngJwsRYRaVAuXXcmB.png" />
           </AvatarList>
           <Dropdown overlay={menu}>
             <a className="ant-dropdown-link" href="#" style={{marginTop: -9, paddingRight: 10, paddingLeft: 10, height: 50}}>

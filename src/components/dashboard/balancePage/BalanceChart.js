@@ -13,11 +13,13 @@ for (let i = 0; i <25; i += 1) {
 
 const BalanceChart = () => {
   return (
+    <div>
       <Bar
         height={300}
         title="Ethereum"
         data={data}
       />
+    </div>
   );
 };
 
