@@ -1,17 +1,17 @@
 import delay from "./delay";
 
-const data = [
+export const data = [
     {
-        "name": "BTC",
-        "profit": 4.589
+        "coin": "BTC",
+        "value": 4.589
     },
     {
-        "name": "ETH",
-        "profit": 7.894
+        "coin": "ETH",
+        "value": 7.894
     },
     {
-        "name": "USD",
-        "profit": 2980
+        "coin": "USD",
+        "value": 2980
     }
 ];
 
@@ -22,7 +22,7 @@ export class ProfitApi {
                 coin = coin.toUpperCase();
                 
                 const profit = data.filter(c => {
-                    if (c.name === coin)
+                    if (c.coin === coin)
                         return c;
                 })[0];
 

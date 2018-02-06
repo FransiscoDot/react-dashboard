@@ -1,0 +1,1 @@
+export const GET_PROFIT_FROM_COIN = "GET_PROFIT_FROM_COIN";
