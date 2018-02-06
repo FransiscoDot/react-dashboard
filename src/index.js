@@ -1,14 +1,17 @@
 import React from 'react';
 import {render} from "react-dom";
 import { BrowserRouter } from 'react-router-dom';
-import configureStore, {history} from './store/configureStore';
 import App from "./components/App";
+import { createStore } from 'redux';
+import profitData from "./reducers/profitReducers";
 
-const store = configureStore();
+let store = createStore(profitData);
+
+debugger;
 
 render(
   <BrowserRouter>
-    <App store={store} history={history}/>
+    <App store={store}/>
   </BrowserRouter>,
   document.getElementById("app")
 );

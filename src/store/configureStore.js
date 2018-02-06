@@ -57,6 +57,3 @@
 // const configureStore = process.env.NODE_ENV === 'production' ? configureStoreProd : configureStoreDev;
 
 // export default configureStore;
-import { createStore } from 'redux'
-import profitData from "../reducers/profitReducers";
-let store = createStore(profitData);
